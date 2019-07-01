@@ -1,6 +1,10 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+# NOTE
+If the app doesn't search for the location and you get a HTTPRequest error in the developer console, you must disable the CORS policy in your browser. 
+eg. In Safari you must enable Developer Tab from Advanced Preferences and withing the Develop Tab you must Disable Cross-Origin Restrictions.
+
+This is a restriction caused by the API source.
 
 ## Development server
 
