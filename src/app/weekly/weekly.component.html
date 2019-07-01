@@ -1,0 +1,13 @@
+<div *ngIf='weather'>
+    <ul class='list-group'>
+      <a [routerLink]="['/detail',i, woeid]"  *ngFor='let wthr of weather.consolidated_weather; let i = index'>
+        <li  class="list-group-item" (click)='this.isSingleEntryClicked.emit(true);'>
+            {{wthr.applicable_date | date:'d MMMM'}}
+            <img appImageResize [isWeekly]='true' class='float-right ml-4'  src='https://www.metaweather.com/static/img/weather/ico/{{wthr.weather_state_abbr}}.ico' alt="{{wthr.weather_state_abbr}}">
+            <span class='float-right'>{{wthr.weather_state_name}}</span>
+
+          </li>
+      </a>
+
+    </ul>
+  </div>

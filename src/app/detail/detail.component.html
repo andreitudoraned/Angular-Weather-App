@@ -1,0 +1,6 @@
+<div *ngIf='weather' class='text-center mt-4'>
+  <h4>{{locationName}}</h4>
+  <h5>{{weather[0].applicable_date}}</h5>
+  <img  appImageResize [isWeekly]='false' src='https://www.metaweather.com/static/img/weather/ico/{{weather[0].weather_state_abbr}}.ico' alt="{{weather[0].weather_state_abbr}}">
+  <p>{{weather[0].weather_state_name}}</p>
+</div>

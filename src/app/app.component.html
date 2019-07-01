@@ -1,0 +1,19 @@
+<div class="container-fuid text-center m-4 p-2">
+    <h3><a (click)="weeklyLoad()" routerLink='/detail' >Weather App</a></h3>
+  </div>
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-12 m-2 p-3">
+        <input type="text" placeholder="Type Location" class='form-control' ngModel #searchValue='ngModel'>
+        <app-detail *ngIf='!isWeeklyLoaded' [loc]='searchValue.value'></app-detail>
+        <app-weekly *ngIf='isWeeklyLoaded' (isSingleEntryClicked)='weeklyLoad()' [loc]='searchValue.value'></app-weekly>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 m-2 p-3">
+        <a routerLink='/weekly' *ngIf='!isWeeklyLoaded' (click)='weeklyLoad()'>Weekly Weather</a>
+      </div>
+    </div>
+  </div>
+  
