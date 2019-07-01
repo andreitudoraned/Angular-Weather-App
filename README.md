@@ -2,7 +2,7 @@
 
 # NOTE
 If the app doesn't search for the location and you get a HTTPRequest error in the developer console, you must disable the CORS policy in your browser. 
-eg. In Safari you must enable Developer Tab from Advanced Preferences and withing the Develop Tab you must Disable Cross-Origin Restrictions.
+eg. In Safari you must enable Developer Tab from Advanced Preferences and within the Develop Tab you must Disable Cross-Origin Restrictions.
 
 This is a restriction caused by the API source.
 
